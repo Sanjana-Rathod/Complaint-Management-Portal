@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint-Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="complaintFormContainer" class="container">
+      <form id="complaintForm" action="/submit-complaint" method="POST">
+        <h2>Complaint Form</h2>
+        <div class="form-group">
+          <label for="complaint">Enter your complaint:</label>
+          <textarea
+            id="complaint"
+            name="complaint"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="complaint.js"></script>
+  </body>
+</html>
